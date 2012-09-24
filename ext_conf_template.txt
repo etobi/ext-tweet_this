@@ -1,0 +1,18 @@
+# cat=basic/enable; type=user[EXT:tweet_this/classes/class.tx_tweetthis_emconfhelper.php:tx_tweetthis_emconfhelper->authenticateTwitter]; label=Twitter Authentication
+twitterAuthentication=0
+
+# cat=basic//10; type=string; label= bit.ly username : sign up here http://bit.ly/account/login )
+bitly_username=
+
+# cat=basic//10; type=string; label= bit.ly API key
+bitly_apikey=
+
+# cat=basic//10; type=int; label= Page-ID : used to initialize an frontend envoirment to create the link to the post/record, might be e.g. your news single page
+pageid=1
+
+
+# cat=basic//10; type=string; label= Tweet template : ###TEXT### The actual text, ###URL## shortend URL to the post, ###SIGNATURE### signature form BE-User
+tweet=###TEXT### - ###URL### (by ###SIGNATURE###)
+
+# cat=basic//10; type=string; label= Enable for these extensions/tables: (choose from: tt_news,t3blog,tt_content,pages,kb_eventboard)
+enableFor=tt_news,t3blog
