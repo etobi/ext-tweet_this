@@ -333,12 +333,12 @@ class tx_tweetthis_Helper implements t3lib_Singleton {
                 require_once(PATH_site.'t3lib/class.t3lib_timetrack.php');
 
                 // Finds the TSFE classname
-                $TSFEclassName = t3lib_div::makeInstanceClassName('tslib_fe');
+                $TSFEclassName = t3lib_div::makeInstance('tslib_fe');
 
                 // Create the TSFE class.
                 $GLOBALS['TSFE'] = new $TSFEclassName($GLOBALS['TYPO3_CONF_VARS'], $pid, '0', 0, '','','','');
 
-                $temp_TTclassName = t3lib_div::makeInstanceClassName('t3lib_timeTrack');
+                $temp_TTclassName = t3lib_div::makeInstance('t3lib_timeTrack');
                 $GLOBALS['TT'] = new $temp_TTclassName();
                 $GLOBALS['TT']->start();
 
